@@ -45,6 +45,18 @@ class Album extends Component {
 		}
 	}
 
+	getInitialState() {
+  		return {
+    	isMouseInside: false
+  		};
+	}
+	mouseEnter = () => {
+  		this.setState({ isMouseInside: true });
+	}
+	mouseLeave = () => {
+  		this.setState({ isMouseInside: false });
+	}
+
 	render() {
 		return (
 			<section className="album">
@@ -66,8 +78,8 @@ class Album extends Component {
            			<tbody>
            			{
 					this.state.album.songs.map( (song, index) =>
-						<tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
-							<td>{index + 1}</td>
+						<tr onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} className="song" key={index} onClick={() => this.handleSongClick(song)} >
+							<td>{this.state.isMouseInside ? {(this.state.isPlaying && this.state.currentSong === song)? (<span className="ion-pause"></span>):(<span className="ion-play"></span>)} : {index + 1}} </td>
 							<td>{song.title}</td>
 							<td>{song.duration}</td>
 						</tr>
