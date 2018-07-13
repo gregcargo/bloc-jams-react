@@ -41,7 +41,6 @@ class Album extends Component {
      	this.audioElement.removeEventListener('timeupdate', this.eventListeners.timeupdate);
      	this.audioElement.removeEventListener('durationchange', this.eventListeners.durationchange);
    	}
-   	
 
 	play() {
 		this.audioElement.play();
@@ -67,6 +66,7 @@ class Album extends Component {
 			this.play();
 		}
 	}
+
 
 	handlePrevClick() {
     	const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
@@ -159,6 +159,7 @@ class Album extends Component {
 			</section>
 		);
 	}
-}	
+
 
 export default Album;
+}
