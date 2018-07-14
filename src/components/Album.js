@@ -22,6 +22,7 @@ class Album extends Component {
 
 		this.audioElement = document.createElement('audio');
 		this.audioElement.src = album.songs[0].audioSrc;
+		};
 
 	componentDidMount() {
      this.eventListeners = {
@@ -159,7 +160,7 @@ class Album extends Component {
 			</section>
 		);
 	}
-
+}
 
 export default Album;
-}
+
