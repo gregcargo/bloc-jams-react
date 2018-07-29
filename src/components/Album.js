@@ -103,7 +103,7 @@ class Album extends Component {
       	const minutes = Math.floor(floorTime / 60);
       	const seconds = (floorTime % 60);
       	
-      	return minutes+":"+seconds; 
+      	return minutes+":"+(seconds < 10 ? "0"+seconds : seconds); 
       	}
 
     handleTimeChange(e) {
