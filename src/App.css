@@ -1,5 +1,37 @@
 .App {
   text-align: center;
+  background-color: #222 ;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+main {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.album {
+  font-family: 'Electrolize';
+  color: white;
+}
+
+#album-info {
+  padding-bottom: 40px;
+}
+
+#song-title-column {
+  width: 100px;
+}
+
+#song-list {
+  margin: auto;
+}
+
+.player-bar {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .App-logo {
@@ -21,6 +53,83 @@
 .App-intro {
   font-size: large;
 }
+
+.Logo {
+  float: left;
+  padding-left: 30px; 
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+ul.navbar-nav {
+  float:right;
+}
+
+.Header {
+  padding-bottom: 200 px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Electrolize';
+}
+
+.here-title {
+  font-size: 50px;
+  padding-top: 100px;
+  color: white;
+}
+
+.album-thumbnail {
+  height: 300px;
+  width: 300px;
+}
+
+.Menu {
+  float: right;
+  padding-top: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar {
+  background: none;
+}
+
+.landing {
+  font-family: 'Electrolize';
+  color: white;
+}
+
+.show-grid {
+  font-family: 'Electrolize';
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.album-info {
+  font-family: 'Electrolize';
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.album-grid {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-bottom: 20px;
+}
+
+ion-icon {
+  font-size: 100px;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
