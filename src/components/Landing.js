@@ -10,21 +10,21 @@ const Landing = () => (
       <Col sm={6} md={4}>
         <br />
         <div className="point">
-        	<ion-icon name="musical-notes"></ion-icon>
+        	<ion-icon name="musical-notes" class="homepageIcons"></ion-icon>
 			<h2 className="point-title">Choose your music!</h2>
 		</div>
       </Col>
       <Col sm={6} md={4}>
         <br />
         <div className="point">
-        	<ion-icon name="infinite"></ion-icon>
+        	<ion-icon name="infinite" class="homepageIcons"></ion-icon>
         	<h2 className="point-title">Unlimited streaming, ad-free</h2>
       	</div>
       </Col>
       <Col sm={6} md={4}>
         <br />
         <div className="point">
-        <ion-icon name="phone-portrait"></ion-icon>
+        <ion-icon name="phone-portrait" class="homepageIcons"></ion-icon>
         <h2 className="point-title">Mobile enabled</h2>
         </div>
       </Col>

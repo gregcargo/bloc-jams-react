@@ -13,9 +13,9 @@ class Library extends Component {
 		return (
 			<section className='Library'>
 				{
-					this.state.albums.map( (album, index) =>
-						 <Grid >
-						 <Link to={`/album/${album.slug}`} key={index}>
+				this.state.albums.map( (album, index) =>
+						 <Grid key={index}>
+						 <Link to={`/album/${album.slug}`}>
     						<Row className="album-grid">
       							<Col sm={6} md={6}>
         							<br/>
